@@ -1,5 +1,6 @@
 # jenkinscicd
 Setup script to build CI/CD environment on GCP with Jenkins.
+Source repository added on GCP also.
 
 This is based on the instruction and guidance on the book named **Pro DevOps with Google Cloud Platform** with Docker, Jenkins, and Kubernetes written by Pierluigi Riti.
 You can find related information of the book [here](https://www.apress.com/gp/book/9781484238967) and the [Github repository here](https://github.com/Apress/pro-devops-with-google-cloud-platform).
@@ -15,5 +16,5 @@ Then, execute the shell script!
 4) Internet Connection
 5) Git installed (or any git client) [optional]
 
-Enjoy!! 
+Enjoy!!
 Luiz Carlos Kazuyuki Fukaya

@@ -1,3 +1,4 @@
+options
 tls.crt
 tls.key
 *.swp

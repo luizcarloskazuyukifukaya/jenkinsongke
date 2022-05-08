@@ -1,0 +1,6 @@
+#!/bin/bash
+PASSWD=`openssl rand -base64 15`
+echo "Generated password:$PASSWD"
+
+#Create options file
+echo "--argumentsRealm.passwd.jenkins=$PASSWD --argumentsRealm.roles.jenkins=admin" > options.txt

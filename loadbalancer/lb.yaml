@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jenkins-lb
+  namespace: jenkinsgcp
+spec:
+  type: LoadBalancer
+  ports:
+  - name: "http-port-ui"
+    protocol: "TCP"
+    nodePort: 30000
+    port: 8080
+    targetPort: 8080
+  selector:
+    app: master

@@ -1,0 +1,17 @@
+# [START jenkins_backend_service]
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: jenkins-discovery
+  namespace: jenkinsgcp
+spec:
+  type: ClusterIP
+  ports:
+    - protocol: TCP
+      port: 50000
+      targetPort: 50000
+      name: slaves
+  selector:
+    app: master
+# [END jenkins_backend_service]
